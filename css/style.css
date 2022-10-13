@@ -1,0 +1,369 @@
+/* 
+    Author: Vijay Thapa;
+    Theme: Restaurant Food Order;
+    version: 1.0;
+*/
+@font-face {
+    font-family: "IBM";
+    src: url(../font/IBM_SEMIBOLD.OTF);
+}
+/* CSS for All */
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: "IBM";
+    transition: .2s linear;
+    text-transform: capitalize;
+    outline: none;
+}
+
+:root{
+    --light-yellow:#EDBE00;
+    --dark-yellow:#a07c04;
+    --white:#fff;
+    --light-white:#fff9;
+}
+
+input:focus{
+    background: #2e2e2e;
+    color: var(--light-white);
+}
+.success{
+    color: #00a95a;
+}
+.erorr{
+    color: #c13129;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.img-responsive{
+    width: 100%;
+    max-height: 420px;
+}
+.img-curve{
+    border-radius: 15px;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: var(--white);
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: var(--light-yellow);
+    text-decoration: none;
+}
+a:hover{
+    color:var(--dark-yellow);
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color: var(--light-yellow);
+    color: var(--white);
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: var(--white);
+    background-color: var(--dark-yellow);
+}
+h2{
+    color: var(--light-yellow);
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 1.5rem;
+}
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+
+/* CSSS for navbar section */
+section{
+    padding: 5rem 10%;
+}
+.header{
+    /* position:sticky;
+    top: 0;left: 0;right: 0;
+    z-index: 1000; */
+    background:linear-gradient(-40deg, #003942d1, rgb(0 20 28 / 79%));
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .navbar a{
+    margin-left: 2rem;
+    font-size: 1.4rem;
+    color: var(--light-yellow);
+}
+.header .navbar a:hover{
+    color: var(--dark-yellow);
+}
+
+
+
+/* CSS for Food SEarch Section */
+
+.food-search{
+    background: linear-gradient(-40deg, #003942d1, rgb(0 20 28 / 79%)), url(../images/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* CSS for Categories */
+.categories{
+    padding: 4% 0;
+}
+
+
+.box-3{
+    width: 28%;
+    float: left;
+    margin: 2%;
+}
+
+
+/* CSS for Food Menu */
+.food-menu{
+    background-color: #ececec;
+    padding: 4% 0;
+}
+.food-menu-box{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.food-menu-img{
+    width: 20%;
+    float: left;
+}
+
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+
+/* =============== FOOTER =============== */
+
+.footer{
+    background: url('../images/footer-bg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    gap: 3rem;
+}
+
+.footer .box-container .box h3{
+    color: var(--white);
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.footer .box-container .box a{
+    display: block;
+    color: var(--light-white);
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer .box-container .box a i{
+    color: var(--light-yellow);
+    padding-right: .5rem;
+    transition: all .2s ease-in-out;
+}
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+
+.footer .credit{
+    text-align: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top: .1rem solid var(--white);
+}
+.footer .credit span{
+    color: var(--light-yellow);
+}
+
+/* for Order Section */
+.order{
+    width: 50%;
+    margin: 0 auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+    color: var(--light-white);
+}
+
+#menu-btn{
+    display: none;
+}
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+
+    .food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .food-search{
+        padding: 10% 0;
+    }
+
+    .categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .food-menu{
+        padding: 20% 0;
+    }
+
+    .food-menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .social{
+        padding: 5% 0;
+    }
+    .order{
+        width: 100%;
+    }
+    /*  */
+    #menu-btn{
+        display: inline-block;
+        
+    }
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+    .header .navbar{
+        position: absolute;
+        top: 99%;left: 0;right: 0;
+        background-color: var(--white);
+        border-top: var(--border);
+        padding: 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a{
+        display: block;
+        text-align: center;
+        margin: 3rem;
+    }
+}
+
+
+.btn-sign{
+    padding: 1rem 2rem;
+    border-radius: 1.3rem;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: var(--white);
+
+}

@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: .2s linear;
+}
+:root{
+    --light-yellow:#EDBE00;
+    --dark-yellow:#a07c04;
+    --white:#fff;
+    --light-white:#fff9;
+    --bk-dark:#06283D;
+    --font-color:#47B5FF;
+    --menu-color:#256D85;
+}
+@font-face {
+    font-family: "IBM-Regular";
+    src: url(../font/IBM_Regular.OTF);
+}
+@font-face {
+    font-family: "IBM";
+    src: url(../font/IBM_SEMIBOLD.OTF);
+}
+body{
+    background-color: var(--bk-dark);
+
+}
+.wrapper{
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+.wrapper .ord{
+    width: 90%;
+
+}
+.text-center{
+    text-align: center;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+.tbl-full{
+    width: 100%;
+}
+.tbl-30{
+    width: 60%;
+}
+table tr th{
+    border-bottom: 1px solid var(--font-color);
+    padding: 1%;
+    text-align: left;
+}
+
+table tr td{
+    padding: 1%;
+}
+.btn-primary{
+    background-color: #287EE7;
+    padding: 1.5%;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 12px;
+}
+.btn-primary:hover{
+    background-color: #0b63cd;}
+
+.btn-secondary{
+    background-color: #00d471;
+    padding: 1.5%;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    font-size: .8rem;
+    cursor: pointer;
+    border: none;
+}
+.btn-secondary:hover{
+    background-color: #00a95a;}
+.btn-danger{
+    background-color: #ef2323;
+    padding: 1.5%;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    font-size: .8rem;
+    cursor: pointer;
+    border: none;
+}
+.btn-danger:hover{
+    background-color: #b20404;
+}
+
+.success{
+    color: #00a95a;
+}
+.erorr{
+    color: #c13129;
+}
+/* css for Menu */
+/* .menu{
+    /* border-bottom: 1px solid #010101; */
+h1,td,th{
+    color: var(--white);
+}
+.menu{    
+    background: var(--menu-color);
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu li{
+    display: inline;
+    padding: 1%;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.menu ul li a:hover{
+    color:var(--bk-dark);
+}
+
+/* css for Main-content */
+.main-content{
+    background-color: var(--bk-dark);
+    padding: 3% 0 ;
+}
+
+.col-4{
+    background-color: var(--font-color);
+    width: 18%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+
+
+/* css for footer */
+.footer{
+    background-color: var(--menu-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+.log{
+    padding: 5px 30%;
+    font-size: 20px;
+    
+}
+.logout{
+    background-color: var(--font-color);
+    color:#FFF;
+    text-decoration:none;
+    padding:15px 18px;
+    border-radius:10px;
+    margin-left:20px;
+}
+.logout:hover{
+    background-color: var(--bk-dark);
+}
+
+
+/* ==================== Input ======================= */
+input {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: var(--font-color);
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);outline: none;
+    padding: .1rem 1rem;
+    border-radius: 1rem;
+    border-color: var(--font-color);
+}
+
